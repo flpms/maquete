@@ -1,0 +1,19 @@
+{
+  "name": "maquete",
+  "version": "0.0.1",
+  "description": "Maquete simple and beautiful api documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flpms/maquete.git"
+  },
+  "author": "Filipe M. Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flpms/maquete/issues"
+  },
+  "homepage": "https://github.com/flpms/maquete#readme"
+}
