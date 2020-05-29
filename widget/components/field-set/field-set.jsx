@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './field-set.css'
+import './field-set.css';
 
 const types = {
   'boolean': 'checkbox',

@@ -1,19 +1,11 @@
 {
   "name": "give-a-try",
   "version": "1.0.0",
-  "description": "",
+  "description": "widget to interactive documentation",
   "main": "index.js",
   "scripts": {
     "start": "parcel serve index.html",
-    "build": "parcel build index.js && npm run clean-js-old-build && npm run clean-js-source-maps && npm run move-js-build && npm run move-jsmaps-build && npm run clean-css-source-maps && npm run clean-css-old-build && npm run move-css-build && npm run move-cssmaps-build",
-    "clean-js-old-build": "rm -rf /Users/flpms/local1202/whiteboard/themes/whiteboard/source/js/lib/index.js",
-    "clean-js-source-maps": "rm -rf /Users/flpms/local1202/whiteboard/themes/whiteboard/source/js/lib/index.js.map",
-    "move-js-build": "mv ./dist/*.js /Users/flpms/local1202/whiteboard/themes/whiteboard/source/js/lib/",
-    "move-jsmaps-build": "mv ./dist/*.js.map /Users/flpms/local1202/whiteboard/themes/whiteboard/source/js/",
-    "clean-css-old-build": "rm -rf /Users/flpms/local1202/whiteboard/themes/whiteboard/source/css/lib/index.css",
-    "clean-css-source-maps": "rm -rf /Users/flpms/local1202/whiteboard/themes/whiteboard/source/css/lib/index.css.map",
-    "move-css-build": "mv ./dist/*.css /Users/flpms/local1202/whiteboard/themes/whiteboard/source/css/",
-    "move-cssmaps-build": "mv ./dist/*css.map /Users/flpms/local1202/whiteboard/themes/whiteboard/source/css/",
+    "build": "parcel build index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

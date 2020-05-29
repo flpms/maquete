@@ -4,7 +4,15 @@
   "description": "Maquete simple and beautiful api documentation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run widget-build && cd app; npm run start",
+    "first-run": "cd widget; npm install && cd ../ && cd app; npm install",
+    "clean-widget-build": "npm run clean-js-widget-build && npm run clean-css-widget-build",
+    "clean-js-widget-build": "rm -rf ./app/themes/whiteboard/source/js/lib/index.js && rm -rf ./app/themes/whiteboard/source/js/lib/index.js.map",
+    "clean-css-widget-build": "rm -rf ./app/themes/whiteboard/source/css/index.css && rm -rf ./app/themes/whiteboard/source/css/index.css.map",
+    "move-files": "npm run move-js-files && npm run move-css-files",
+    "move-js-files": "mv widget/dist/index.js app/themes/whiteboard/source/js/lib/. && mv widget/dist/index.js.map app/themes/whiteboard/source/js/lib/.",
+    "move-css-files": "mv widget/dist/*.css ./app/themes/whiteboard/source/css/.",
+    "widget-build": "npm run clean-widget-build && cd widget; npm run build && cd .. && npm run move-files"
   },
   "repository": {
     "type": "git",
