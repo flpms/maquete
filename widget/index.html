@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Give a try</title>
+  </head>
+  <body>
+    <div class="component-schema">
+      <div class="schema">
+        {
+          "request": "http://localhost:4000/v1/templates",
+          "headers": {
+            "method": "GET"
+          }
+        }
+      </div>
+      <div class="component">
+      </div>
+    </div>
+
+    <div class="component-schema">
+      <div class="schema">
+        {
+          "request": "http://example.com/api/post",
+          "headers": {
+            "method": "POST"
+          },
+          "data": {
+            "email": { "type": "string" },
+            "password": { "type": "string" },
+            "details": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "same-address": { "type": "boolean" },
+                "address": {
+                  "type": "object",
+                  "properties": {
+                    "street": { "type": "string" },
+                    "number": { "type": "number" },
+                    "other-address": {
+                      "type": "object",
+                      "properties": {
+                        "street": { "type": "string" },
+                        "number": { "type": "number" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      </div>
+      <div class="component">
+      </div>
+    </div>
+
+    <script>
+      
+    </script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

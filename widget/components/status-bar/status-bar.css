@@ -1,0 +1,13 @@
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  background: #3F3F3F;
+  color: white;
+  font-weight: 800;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.status-bar .success { color: green; }
+.status-bar .fail { color: red; }
+.status-bar .request-time { color: white; }

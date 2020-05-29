@@ -1,0 +1,12 @@
+.field-set-header .header { font-family: 'Courier New', Courier, monospace; }
+
+.field-set-header .header, .field-set .field {
+  margin-left: 1rem;
+}
+
+.field-set .field input {
+  background: rgba(255,255,255,0.3);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+}

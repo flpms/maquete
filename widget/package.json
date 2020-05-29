@@ -1,0 +1,45 @@
+{
+  "name": "give-a-try",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "parcel build index.js && npm run clean-js-old-build && npm run clean-js-source-maps && npm run move-js-build && npm run move-jsmaps-build && npm run clean-css-source-maps && npm run clean-css-old-build && npm run move-css-build && npm run move-cssmaps-build",
+    "clean-js-old-build": "rm -rf /Users/flpms/local1202/whiteboard/themes/whiteboard/source/js/lib/index.js",
+    "clean-js-source-maps": "rm -rf /Users/flpms/local1202/whiteboard/themes/whiteboard/source/js/lib/index.js.map",
+    "move-js-build": "mv ./dist/*.js /Users/flpms/local1202/whiteboard/themes/whiteboard/source/js/lib/",
+    "move-jsmaps-build": "mv ./dist/*.js.map /Users/flpms/local1202/whiteboard/themes/whiteboard/source/js/",
+    "clean-css-old-build": "rm -rf /Users/flpms/local1202/whiteboard/themes/whiteboard/source/css/lib/index.css",
+    "clean-css-source-maps": "rm -rf /Users/flpms/local1202/whiteboard/themes/whiteboard/source/css/lib/index.css.map",
+    "move-css-build": "mv ./dist/*.css /Users/flpms/local1202/whiteboard/themes/whiteboard/source/css/",
+    "move-cssmaps-build": "mv ./dist/*css.map /Users/flpms/local1202/whiteboard/themes/whiteboard/source/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/local1202/give-a-try.git"
+  },
+  "author": "Filipe M. Silva (@flpms)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/local1202/give-a-try/issues"
+  },
+  "homepage": "https://github.com/local1202/give-a-try#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-regenerator": "^7.8.7",
+    "@babel/plugin-transform-spread": "^7.8.3",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "cssnano": "^4.1.10"
+  }
+}
