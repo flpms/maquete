@@ -48,7 +48,7 @@ class App extends Component {
   render() {
     return (
       <div className="widget-component">
-        {this.state.headers ? <HeadersFieldsSet fields={this.state.headers}/> : null }
+        {/* {this.state.headers ? <HeadersFieldsSet fields={this.state.headers}/> : null } */}
         {this.state.fields ? <FieldSet fields={this.state.fields}/> : null }
         <button onClick={this.onClick} type="button">Enviar</button>
         {this.state.statusCode ? <StatusBar status={this.state.statusCode} requestTime={this.state.totalTime} /> : null}
