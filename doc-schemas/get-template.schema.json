@@ -1,0 +1,8 @@
+{
+  "title": "get templates",
+  "description": "A function GET example",
+  "request": "http://localhost:4000/v1/templates",
+  "headers": {
+    "method": "GET"
+  }
+}
